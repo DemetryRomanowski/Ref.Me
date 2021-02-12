@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Ref.Me</title>
+    <meta name="description" content="A free reference image viewer for artists.">
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic">
+    <link rel="stylesheet" href="../static/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/fonts/simple-line-icons.min.css">
+</head>
+
+<body id="page-top">
+<nav class="navbar navbar-light navbar-expand" id="sidebar-wrapper">
+    <div class="container">
+        <button data-toggle="collapse" class="navbar-toggler d-none" data-target="#"></button>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav sidebar-nav" id="sidebar-nav">
+                <li class="nav-item sidebar-brand" role="presentation"><a class="nav-link active js-scroll-trigger"
+                                                                          href="#page-top">Ref.Me</a></li>
+                <li class="nav-item sidebar-nav-item" role="presentation"><a class="nav-link js-scroll-trigger"
+                                                                             href="#page-top">Home</a></li>
+                <li class="nav-item sidebar-nav-item" role="presentation"><a class="nav-link js-scroll-trigger"
+                                                                             href="#about">About</a></li>
+                {#                    <li class="nav-item sidebar-nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#services">Services</a></li>#}
+                <li class="nav-item sidebar-nav-item" role="presentation"><a class="nav-link js-scroll-trigger"
+                                                                             href="#portfolio">Portfolio</a></li>
+                {#                    <li class="nav-item sidebar-nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>#}
+            </ul>
+        </div>
+    </div>
+</nav>
+<header class="d-flex masthead" style="background-image:url('../static/img/bg-masthead.jpg');">
+    <div class="container my-auto text-center">
+        <h1 class="mb-1">Ref.Me</h1>
+        <h3 class="mb-5"><em>A fast light weight reference image viewer</em></h3>
+        <p>Linux, Mac, and Windows</p><a class="btn btn-primary btn-xl js-scroll-trigger" role="button"
+                                         href="{{ url_for('download') }}">Download Now</a>
+        <div class="overlay"></div>
+    </div>
+</header>
+<section id="about" class="content-section bg-light">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <h2>Ref.Me is the perfect tool for professionals and hobbyists alike!</h2>
+                <p class="lead mb-5"><span>It provides useful functionality like drag and drop from the web, or desktop. Saving and Loading scenes to pickup where you left off. Transparency mode to trace over what ever art software you use.&nbsp;&nbsp;</span><span></span>
+                </p>
+                <a
+                        class="btn btn-dark btn-xl js-scroll-trigger" role="button" href="{{ url_for('download') }}">Download</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="callout"
+         style="background:linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url('../static/img/bg-callout.jpg');background-position:center center;background-repeat:no-repeat;background-size:cover;">
+    <div class="container text-center">
+        <h2 class="mx-auto mb-5">
+            <span>Welcome to&nbsp;</span><em>your</em><span><br>next reference image viewer!<br></span></h2><a
+            class="btn btn-primary btn-xl" role="button" href="#">Download Now!</a></div>
+</section>
+<section id="portfolio" class="content-section">
+    <div class="container">
+        <div class="content-section-heading text-center">
+            <h3 class="text-secondary mb-0">Gallary</h3>
+            <h2 class="mb-5"></h2>
+        </div>
+        <div class="row no-gutters">
+            <div class="col-lg-6">
+                <a class="portfolio-item" href="{{ url_for('download') }}">
+                    <div class="caption">
+                        <div class="caption-content">
+                            <h2 style="color: rgb(255,168,0);">QUICK SCENE LAYOUT</h2>
+                            <p class="mb-0" style="color: rgb(250,255,0);">Quickly layout your reference scene with
+                                simple drag and drop.</p>
+                        </div>
+                    </div>
+                    <img class="img-fluid" src="../static/img/refme_tigers.gif"></a>
+            </div>
+            <div class="col-lg-6">
+                <a class="portfolio-item" href="{{ url_for('download') }}">
+                    <div class="caption">
+                        <div class="caption-content">
+                            <h2>Easy intuitive User Interface</h2>
+                            <p class="mb-0">Don't worry you don't need to try and figure out another set of key
+                                bindings. Everything is intuitive and easy to use.</p>
+                        </div>
+                    </div>
+                    <img class="img-fluid" src="../static/img/refme_owl.gif"></a>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer text-center">
+    <div class="container">
+        <ul class="list-inline mb-5">
+            <li class="list-inline-item">&nbsp;<a class="text-white social-link rounded-circle"
+                                                  href="https://www.github.com/demetryromanowski"><i
+                    class="icon-social-github"></i></a></li>
+        </ul>
+        <p class="text-muted mb-0 small">Copyright &nbsp;© Ref.Me 2021</p>
+    </div>
+    <a class="js-scroll-trigger scroll-to-top rounded" href="#page-top"><i class="fa fa-angle-up"></i></a></footer>
+<script src="../static/js/jquery.min.js"></script>
+<script src="../static/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<script src="../static/js/script.min.js"></script>
+</body>
+
+</html>
