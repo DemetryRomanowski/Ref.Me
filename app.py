@@ -15,7 +15,7 @@ def download():
 
 @app.route('/download/linux_deb', methods=['GET'])
 def linux_deb():
-    return send_file('./downloads/refme.deb')
+    return send_file('./downloads/refme_1.0-1.deb')
 
 
 @app.route('/download/linux_rpm', methods=['GET'])
