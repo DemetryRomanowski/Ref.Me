@@ -30,7 +30,7 @@ def mac():
 
 @app.route('/download/windows', methods=['GET'])
 def windows():
-    return send_file('./downloads/refme.exe')
+    return send_file('./downloads/InstallRefMe.exe', as_attachment=True, attachment_filename='InstallRefMe.exe')
 
 
 if __name__ == '__main__':
